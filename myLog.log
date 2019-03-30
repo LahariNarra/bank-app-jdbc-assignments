@@ -1,0 +1,53 @@
+2019-03-27 - 0 - [main] ERROR com.capgemini.bankapp.client.BankAccountClient  -Withdraw falied :
+com.capgemini.bankapp.exception.LowBalanceException: You dont have sufficient balance
+	at com.capgemini.bankapp.service.impl.BankAccountServiceImpl.withdraw(BankAccountServiceImpl.java:33)
+	at com.capgemini.bankapp.client.BankAccountClient.main(BankAccountClient.java:59)
+2019-03-27 - 415218 - [main] ERROR com.capgemini.bankapp.client.BankAccountClient  -Exception :
+com.capgemini.bankapp.exception.LowBalanceException: You dont have sufficient balance
+	at com.capgemini.bankapp.service.impl.BankAccountServiceImpl.withdraw(BankAccountServiceImpl.java:33)
+	at com.capgemini.bankapp.service.impl.BankAccountServiceImpl.fundTransfer(BankAccountServiceImpl.java:52)
+	at com.capgemini.bankapp.client.BankAccountClient.main(BankAccountClient.java:85)
+2019-03-28 - 0 - [main] ERROR com.capgemini.bankapp.client.BankAccountClient  -Withdraw falied :
+com.capgemini.bankapp.exception.BankAccountIdNotFoundException: Account is not found
+	at com.capgemini.bankapp.dao.impl.BankAccountDaoImpl.findAccountId(BankAccountDaoImpl.java:151)
+	at com.capgemini.bankapp.client.BankAccountClient.main(BankAccountClient.java:61)
+2019-03-28 - 0 - [main] ERROR com.capgemini.bankapp.client.BankAccountClient  -Withdraw falied :
+com.capgemini.bankapp.exception.BankAccountIdNotFoundException: Account is not found
+	at com.capgemini.bankapp.dao.impl.BankAccountDaoImpl.findAccountId(BankAccountDaoImpl.java:151)
+	at com.capgemini.bankapp.client.BankAccountClient.main(BankAccountClient.java:61)
+2019-03-28 09:04:24 - 0 - [main] ERROR com.capgemini.bankapp.client.BankAccountClient  -Account not found :
+com.capgemini.bankapp.exception.BankAccountIdNotFoundException: Account is not found
+	at com.capgemini.bankapp.dao.impl.BankAccountDaoImpl.findAccountId(BankAccountDaoImpl.java:151)
+	at com.capgemini.bankapp.client.BankAccountClient.main(BankAccountClient.java:61)
+2019-03-28 09:12:05 - 1 - [main] ERROR com.capgemini.bankapp.client.BankAccountClient  -Account not found :
+com.capgemini.bankapp.exception.BankAccountIdNotFoundException: Account is not found
+	at com.capgemini.bankapp.dao.impl.BankAccountDaoImpl.findAccountId(BankAccountDaoImpl.java:151)
+	at com.capgemini.bankapp.client.BankAccountClient.main(BankAccountClient.java:61)
+2019-03-28 09:12:51 - 45852 - [main] ERROR com.capgemini.bankapp.client.BankAccountClient  -Account not found :
+com.capgemini.bankapp.exception.BankAccountIdNotFoundException: Account is not found
+	at com.capgemini.bankapp.dao.impl.BankAccountDaoImpl.findAccountId(BankAccountDaoImpl.java:151)
+	at com.capgemini.bankapp.client.BankAccountClient.main(BankAccountClient.java:97)
+2019-03-28 09:12:59 - 53719 - [main] ERROR com.capgemini.bankapp.client.BankAccountClient  -Account not found :
+com.capgemini.bankapp.exception.BankAccountIdNotFoundException: Account is not found
+	at com.capgemini.bankapp.dao.impl.BankAccountDaoImpl.findAccountId(BankAccountDaoImpl.java:151)
+	at com.capgemini.bankapp.client.BankAccountClient.main(BankAccountClient.java:100)
+2019-03-28 11:51:41 - 0 - [main] ERROR com.capgemini.bankapp.util.DbUtil  -SQLException
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Connection.close() has already been called. Invalid operation in this state.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:985)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:927)
+	at com.mysql.jdbc.ConnectionImpl.getMutex(ConnectionImpl.java:3015)
+	at com.mysql.jdbc.ConnectionImpl.commit(ConnectionImpl.java:1521)
+	at com.capgemini.bankapp.util.DbUtil.commit(DbUtil.java:38)
+	at com.capgemini.bankapp.service.impl.BankAccountServiceImpl.addNewBankAccount(BankAccountServiceImpl.java:101)
+	at com.capgemini.bankapp.client.BankAccountClient.main(BankAccountClient.java:49)
+2019-03-28 11:55:59 - 0 - [main] ERROR com.capgemini.bankapp.client.BankAccountClient  -Withdraw falied :
+com.capgemini.bankapp.exception.BankAccountIdNotFoundException: Account Id Doesnot Exist
+	at com.capgemini.bankapp.service.impl.BankAccountServiceImpl.withdraw(BankAccountServiceImpl.java:37)
+	at com.capgemini.bankapp.client.BankAccountClient.main(BankAccountClient.java:60)
